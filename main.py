@@ -16,4 +16,11 @@ async def on_ready():
 
 # Retrieve token from the .env file
 load_dotenv()
+'''
+#This code is for local machines. Not replit
 bot.run(os.getenv('TOKEN'))
+'''
+
+#This code is for Replit
+token = os.environ['Token']
+bot.run(token)
